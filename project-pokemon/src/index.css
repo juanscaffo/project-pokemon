@@ -1,0 +1,216 @@
+:root {
+
+  color-scheme: light ;
+ }
+ body{
+   margin: 0;
+   background-color: rgb(22,20,27);
+ }
+
+ a {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: inherit; /* Hereda el color del texto del padre */
+}
+
+span {
+  color: blue;
+  font-size: large;
+  font-family:Georgia, 'Times New Roman', Times, serif
+ }
+ 
+ .nav-links{
+   display: flex;
+   gap: 20px;
+ }
+
+ .msj-error{
+  display: flex;
+  justify-content: center;
+  color: red;
+  font-size: large;
+ }
+
+
+ /* --------------------------- STYLE HOME ----------------------------- */
+
+
+.card-grid{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 5px;
+  
+
+}
+
+/* ----------------------------- STYLE FAVORITES -------------------------*/
+.title-favorites{
+color: rgb(232, 238, 77);
+display: flex;
+justify-content: center;
+}
+
+/*---------------------------- STYLE ABILITES-------------------------  */
+.abilities-container {
+  display: flex;
+  justify-content: center;
+   
+}
+
+
+/*---------------------------- COMPONENTES ----------------/*
+
+ /* ---------------------------------- NAVBAR ------------------------ */
+ .container-nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 300px;
+  color: black;
+  padding: 5px;
+
+  
+}
+ .img-navbar{
+  width: 17rem;
+  
+ 
+
+ }
+ h1 { 
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+  font-size: 2.4rem;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
+}
+
+/* Aplicando la animación bounce a un elemento */
+.pokeball {
+  animation: bounce 0.4s linear infinite alternate;
+  animation-duration: 0.4s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: bounce;
+  height: 2.4rem;
+  animation: bounce 0.4s linear infinite alternate;
+}
+
+
+
+
+
+.container-nav nav {
+  color: #fff;
+  padding: 10px;
+}
+
+
+
+
+ /*------------------------------- CARD ---------------------*/
+
+ .card {
+  background-color:rgb(35,35,35) ;
+  border-radius: 10px;
+  border: 2px solid rgb(64, 219, 41);
+  box-shadow: 1px 1px 1px 1px rgb(92, 91, 91);
+  font-family: "Lato", sans-serif;
+  width: 180px;
+  height: 300px;
+  text-align: center;
+  padding: 10px;
+ }
+
+ .img-pokemon {
+  background-color: rgb(62,61,61);
+  border-radius: 100px;
+  box-shadow: 0 3px 10px rgba(255, 251, 251, 0.6);
+  width: 130px;
+  height: 130px;
+  padding: 10px;
+}
+
+.name-card {
+  text-transform: uppercase;
+  color: #fff;
+  
+ }
+
+ .id{
+  margin-top: -12px;
+ }
+
+ p {
+  color: #b8afaf;
+  margin: 3px -5px;
+  font-size: small;
+}
+
+.type{
+  color: #fff;
+  font-size: medium;
+  
+}
+
+.card button{
+  margin-top: 10px;
+}
+
+.card:hover{
+  box-shadow: 2px 2px 2px 2px rgba(255, 251, 251, 0.6);
+  transform: scale(1.05); /* Escala la tarjeta un 5% más grande */
+}
+
+
+
+/*-------------------------------- BUTTON --------------------------*/
+button{
+  width: max-content;
+  background-color: rgba(113, 113, 122, 0.163);
+  color:rgb(232, 238, 77); ;
+  border:none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  
+}
+
+/* ------------------------------ SEARCH -------------------------*/
+.container-search{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+ 
+  
+}
+
+.search {
+  border: 2px solid rgb(24, 107, 11); 
+  border-radius: 20px;
+  color: #fff;
+  padding: 7px;
+  background-color:rgb(35,35,35) ;
+  width: 200px;
+
+}
+
